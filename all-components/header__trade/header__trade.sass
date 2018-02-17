@@ -1,0 +1,180 @@
+/* VARIABLES */
+
+$header__trade_bg-color: #f1f1f1
+$caption-main_color: rgb(55, 140, 85)
+$main-color: #ffcc00
+$ul-main_li_color: #1a1b1d
+$secondary_color: rgb(219, 226, 232)
+
+/* STYLES */
+
+.header-main
+  background-color: $header__trade_bg-color
+
+.header-main-content
+  display: flex
+  justify-content: space-between
+  align-items: center
+  height: 500px
+
+.flex 
+  display: flex
+  align-items: center
+  margin: auto
+
+.header-main-content .caption-main
+  font-size: rem(52)
+  color: $caption-main_color
+
+.hr-main
+  background-color: $main-color
+  width: 160px
+  height: 8px
+  border: none !important
+  display: block
+  margin-right: auto
+  margin-left: 0
+
+.img-main
+  max-width: 430px
+
+.ul-main
+  list-style: none
+  padding: 0
+
+.ul-main li
+  color: $ul-main_li_color
+  font-size: rem(20)
+  line-height: 1.75
+
+.ul-main li:before
+  color: $caption-main_color
+  content: "●"
+  padding-right: 10px
+
+.header-form-back
+  background-color: $ul-main_li_color
+  max-width: 370px
+  width: 100%
+  height: 100%
+  padding: 20px 40px 5px 40px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.header-form-back .caption
+  color: #fff
+
+.header-form-back .secondary
+  font-size: rem(10)
+  text-align: center
+  color: $secondary_color
+
+.header-form-back form input
+  border-width: 1px
+  border-color: $caption-main_color
+  border-style: solid
+  border-radius: 3px
+  height: 53px
+  width: 100%
+  padding: 10px 15px
+
+.header-form-back form button[type="submit"]
+  border-radius: 3px
+  border: none
+  background-color: $main-color
+  max-width: 300px
+  padding: 12px 20px
+  width: 100%
+  display: inline-block
+  font-size: rem(18)
+  color: $ul-main_li_color
+  text-align: center
+  margin: 0 0 10px 0
+
+.header-form-back form input[type='checkbox']
+  height: 25px
+  width: 25px
+  margin: 10px auto 0 0
+  float: left
+
+.header-form-back form label
+  color: #fff
+
+.header-form-back form label[for='conditions']
+  text-align: left
+  margin-top: 10px
+  line-height: 2
+  clear: both
+  display: block
+
+.header-form-back
+  overflow: auto
+
+.header-form-back form p
+  color: $secondary_color
+  font-size: rem(16)
+  text-align: left
+  margin-top: 15px
+
+@media (max-width: $screen-lg)
+  .div-main-info
+    max-width: 770px
+    margin: 0 auto
+
+  .header-main-content
+    flex-direction: column
+    height: initial
+    padding: 30px 0
+    
+  .header-main    
+    padding: 20px 0
+    
+  .header-form-back
+    margin-top: 20px
+    
+@media (max-width: $screen-md)
+  .div-main-info
+    max-width: initial
+    
+  .img-main
+    display: none
+    
+  .header-main-content
+    flex-direction: row
+    height: 500px
+    padding: 0
+    
+  .header-main
+    padding: 0
+    
+  .header-form-back
+    margin-top: 0
+
+@media (max-width: $screen-sm) 
+  .header-main-content
+    flex-direction: column
+    height: initial
+    padding: 0
+    
+  .header-main
+    padding: 20px 0
+    
+  .header-form-back
+    margin-top: 20px
+    max-width: 100%
+    
+  .header-form-back form button[type="submit"]
+    max-width: 100%
+    
+@media (max-width: $screen-xs) 
+  .header-main-content .caption-main
+    font-size: rem(42)
+    
+  .header-form-back
+    padding: 10px 15px
+    border-radius: 3px
+	
+  .ul-main li
+    font-size: rem(16)

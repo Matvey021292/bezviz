@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Lasco-Bold';
+  src: url('Lasco-Bold.eot');
+  src: url('Lasco-Bold.woff2') format('woff2'),
+       url('Lasco-Bold.woff') format('woff'),
+       url('Lasco-Bold.ttf') format('truetype'),
+       url('Lasco-Bold.svg#Lasco-Bold') format('svg'),
+       url('Lasco-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

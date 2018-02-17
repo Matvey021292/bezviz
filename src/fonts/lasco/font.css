@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Lasco';
+  src: url('Lasco.eot');
+  src: url('Lasco.woff2') format('woff2'),
+       url('Lasco.woff') format('woff'),
+       url('Lasco.ttf') format('truetype'),
+       url('Lasco.svg#Lasco') format('svg'),
+       url('Lasco.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

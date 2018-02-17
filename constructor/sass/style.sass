@@ -1,0 +1,337 @@
+body
+  background:
+    color: #f0f0f0 !important
+  z-index: 1
+  &:after
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 2
+    left: 0
+    height: 100%
+    width: 100%
+    background-color: rgba(#fff, .8)
+
+.constructor
+  width: 80%
+  margin:
+    left: 20%
+    //top: 60px
+  &__add
+    position: absolute
+    top: 0
+    right: 0
+    height: 44px
+    width: 44px
+    cursor: pointer
+    background-color: #f8f8f8
+    border-left: 1px solid #ebebeb
+    color: #f1a514
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 25px
+  &__row
+    height: 100%
+  &__elements
+    display: flex
+    padding: 0
+    list-style-type: none
+    flex-wrap: wrap
+    //justify-content: baseline
+    margin-top: 60px
+  &__container
+    display: flex
+    align-items: center
+  &__number
+    user-select: none
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+    text-transform: uppercase
+    font-weight: lighter
+  &__form
+    //margin-top: 60px
+    height: 100%
+    position: relative
+  &__button
+    text-align: center
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 60px
+    padding:
+      top: 10px
+      bottom: 10px
+    background-color: #dedede
+    .btn
+      background-color: #f1a514
+      color: #fff
+      &:focus, &:after, &:hover
+        color: #fff
+        outline: none !important
+  &__name
+    padding: 10px
+    text-align: center
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+    font-size: 17px
+    border-bottom: 1px solid #e5e5e5
+    text-transform: uppercase
+    position: relative
+    background-color: #f8f8f8
+    &--active
+      border-bottom-color: #f1a514
+  &__input
+    padding: 10px
+    border-bottom: 1px solid #e5e5e5
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+    font-size: 17px
+    width: 100%
+    position: relative
+    margin: 0
+    display: flex
+    cursor: pointer
+    align-items: center
+    justify-content: space-between
+    &--active
+      border-bottom-color: #f1a514
+      background-color: rgba(#f1a514, 0.2)
+    span
+      margin-left: 15px
+      user-select: none
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+      text-transform: uppercase
+      font-weight: lighter
+  &__checkbox
+    width: 17px
+    height: 17px
+    margin-top: 0 !important
+    outline: none
+    background-color: #ffffff
+    &:hover, &:active, &:focus
+      outline: none !important
+  &__items
+    width: 100%
+    //display: flex
+    //align-items: flex-start
+    //flex-wrap: wrap
+    height: 100%
+  &__margin
+    margin: 10px
+    background-color: #fafafa
+    border: 1px solid #e5e5e5
+  &__img
+    height: 150px
+    width: 100%
+    position: relative
+    border: 2px solid transparent
+    cursor: pointer
+    padding: 10px
+    &:before
+      content: '\e140'
+      font-family: 'Glyphicons Halflings'
+      display: block
+      position: absolute
+      color: #ffffff
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      font-size: 25px
+      opacity: .7
+    img
+      height: 100%
+      width: 100%
+      object-fit: cover
+      transition: all .55s linear
+  &__item
+    user-select: none
+    width: 33.33333% !important
+
+.active
+  border-color: #f1a514
+
+.header
+  background:
+    color: #2d3c50
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 9
+  &__wrap
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding:
+      top: 15px
+      bottom: 15px
+      left: 15px
+      right: 15px
+
+.logo
+  img
+    width: 150px
+
+.menu
+  &__items
+    display: flex
+    padding: 0
+    margin: 0
+    list-style-type: none
+    justify-content: flex-end
+  &__item
+    margin:
+      left: 10px
+      right: 10px
+    &:last-child
+      margin-right: 0
+  &__link
+    font-size: 15px
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+    color: #fff
+    &:focus, &:active, &:hover
+      color: #fff
+.popupImg.active
+    transform: scale(1) !important
+.popupImg
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  z-index: 9
+  right: 0
+  transform: scale(0)
+  transition: all .40s
+  &__bg
+    background-color: rgba(0, 0, 0, 0.9)
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    z-index: 9
+    right: 0
+  &__close
+    position: absolute
+    top: 0
+    right: 0
+    color: #ffffff
+    z-index: 15
+    font-size: 20px
+    padding: 15px
+    cursor: pointer
+  &__item
+    max-width: 1000px
+    position: relative
+    transform: translateY(-50%)
+    top: 50%
+    z-index: 11
+    margin: 0 auto
+    padding:
+      left: 15px
+      right: 15px
+    img
+      width: 100%
+  &__view
+    max-width: 1000px
+    position: relative
+    padding:
+      left: 15px
+      right: 15px
+    z-index: 11
+    margin:
+      top: 0
+      bottom: 0
+      left: auto
+      right: auto
+    height: 100%
+    overflow-y: auto
+
+.documentation
+  &__content
+    padding: 10px
+    margin-top: 40px
+    background-color: #fafafa
+    border: 1px solid #e5e5e5
+
+.img-block
+  img
+    width: 100%
+    display: block
+
+#popup
+  opacity: .2
+  cursor: no-drop
+  background-color: #535353
+
+.popup-active__button
+  opacity: 1 !important
+  cursor: pointer !important
+  background-color: #f1a514 !important
+
+.panelP
+  display: flex
+  align-items: flex-start
+  &-left
+    width: 20%
+    height: 100%
+    position: fixed
+    border-right: 1px solid #e5e5e5
+    background-color: rgb(222, 222, 222)
+    left: 0
+    &__wrap
+      height: 100%
+
+
+.ui-droppable-active
+  background-color: #fff !important
+  //height: calc( 100vh - 60px )
+
+#trash
+  overflow: auto
+  height: calc( 100vh - ( 60px + 54px ))
+  .gallery
+    margin-top: 0
+
+#gallery.gallery
+  height: calc( 100vh - 70px )
+
+.gallery
+  padding: 0 !important
+  margin-top: 60px
+  li
+    list-style-type: none
+    a
+      display: none !important
+
+.panelP-left
+  //overflow-y: scroll
+  .constructor__item
+    width: 100% !important
+
+.constructor__img
+  img
+    height: 100% !important
+
+.constructor__items
+  margin-top: 60px
+
+.btnClone
+  text-align: center
+  margin-bottom: 10px
+
+.btn
+  background-color: #f1a514
+  color: #fff
+  &:focus, &:after, &:hover
+    color: #fff
+    outline: none !important
+
+.constructor__margin--active
+  ul
+    li
+      .btnClone
+        display: block !important
+
+.constructor__class
+  .constructor__name
+    text-align: left
+    border-bottom: none
+

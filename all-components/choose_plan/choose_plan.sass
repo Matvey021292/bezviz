@@ -1,0 +1,90 @@
+.choose_plan
+	h1
+		margin-bottom: 30px
+.row__plans
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	@media screen and (max-width: $screen-sm)
+		justify-content: center
+.plan
+	width: 30%
+	display: flex
+	flex-direction: column
+	align-items: center
+	border: 1px solid #afafaf
+	@media screen and (max-width: $screen-md)
+		width: 45%
+		margin-bottom: 30px
+		&:last-child
+			margin-left: 27.5%
+	@media screen and (max-width: $screen-sm)
+		width: 90%
+		&:last-child
+			margin-left: 0
+.plan__name
+	width: 100%
+	padding: 10px
+	text-align: center
+	border-bottom: 1px solid #afafaf
+.name__heading
+	margin: 0 0 10px 0
+	font-weight: bold
+	font-size: rem(22)
+.name__desc
+	margin: 0
+	font-size: rem(16)
+	color: #bbb
+.plan__price
+	width: 100%
+	padding: 10px
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+	background-color: #eee
+	border-bottom: 1px solid  #afafaf
+.price__dollar
+	font-size: rem(36)
+.price__cent
+	margin-top: 5px
+	font-size: rem(16)
+	align-self: flex-start
+.price__month
+	width: 100%
+	text-align: center
+	color: #bbb
+.plan__features
+	width: 100%
+	margin: 0
+	padding: 10px
+	list-style: none
+	display: flex
+	flex-direction: column
+	align-items: center
+	color: #777
+	border-bottom: 1px solid #afafaf
+	li
+		width: 90%
+		padding: 10px 0
+		text-align: center
+		border-bottom: 1px solid #afafaf
+	li:last-child
+		border-bottom: none
+.plan__buy
+	width: 100%
+	padding: 10px
+	background-color: #eee
+	display: flex
+	justify-content: center
+	align-items: center
+.buy__btn
+	width: 200px
+	height: 50px
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: #333
+	color: #fff
+	border: none
+	font-size: rem(18)
+	font-weight: bold

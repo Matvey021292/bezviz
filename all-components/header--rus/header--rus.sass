@@ -1,0 +1,356 @@
+/* VARIABLES */
+
+$header_bg-color: rgba(40, 40, 42, .9)
+$main_color: #ffcc00
+$header__line_color: #474747
+$button-lit_bg-color: #757577
+
+/* STYLES */
+
+.header
+  background-color: $header_bg-color
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 9999
+  &-logo
+    position: relative
+    z-index: 9
+  &-wrap
+    &--left
+      width: 220px
+    &--right
+      width: 100%
+      display: flex
+      justify-content: flex-end
+  &-certificate
+    position: absolute
+    margin: 0 auto
+    left: 0
+    right: 0
+    top: 0
+    display: flex
+    justify-content: center
+    &__items
+      padding: 0
+      margin: 0
+      list-style-type: none
+      display: flex
+      align-items: flex-end
+    &__item
+      height: 55px
+      margin: 5px
+      img
+        display: block
+        height: 100%
+        opacity: .5
+  &-container
+    display: flex
+    align-items: center
+  &-buttons
+    position: relative
+    z-index: 9
+    &__item
+      display: flex
+  &-elements
+    &__top
+      display: flex
+      align-items: center
+      margin-top: 15px
+      margin-bottom: 15px
+    &__bottom
+      display: flex
+      align-items: center
+  &-navigation
+    position: relative
+    z-index: 9
+    &__items
+      margin: 0
+      padding:
+        top: 15px
+        bottom: 15px
+        left: 0
+      list-style-type: none
+      display: flex
+    &__item
+      margin-right: 20px
+      background-size: 0 0
+    &__link
+      background:
+        position: bottom
+        repeat: no-repeat
+      transition: all .2s linear
+      font-size: rem(14)
+      text-transform: uppercase
+      text-decoration: none
+      color: #fff
+      padding: 0
+      position: relative
+      &:after
+        content: ''
+        display: block
+        width: 0
+        position: absolute
+        height: 2px
+        background-color: $main_color
+        left: 0
+        right: 0
+        bottom: -5px
+        transition: all .25s ease
+        margin:
+          bottom: 0
+          left: auto
+          right: auto
+      &:hover
+        color: $main_color
+        transition: all .25s ease
+        &:after
+          width: 40px
+          transition: all .25s ease
+  &-elements
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-end
+    flex-direction: column
+    align-items: flex-end
+  &-line
+    height: 2px
+    width: 100%
+    background: $header__line_color
+  &-lang
+    cursor: pointer
+    position: relative
+    &:hover
+      .header
+        &-lang
+          &__items
+            height: 100%
+            transition: all .25s ease
+    &__items
+      margin: 0
+      padding: 0
+      list-style-type: none
+      position: absolute
+      height: 0
+      overflow: hidden
+      transition: all .25s ease
+      top: 20px
+    &__item
+      width: 40px
+      img
+        width: 100%
+        display: block
+
+ul.header-lang__items
+  position: absolute
+  top: 40px
+  transition: all .25s ease
+
+.header-navigation__item
+  .active
+    color: $main_color
+    &:after
+      content: ''
+      display: block
+      width: 40px
+      position: absolute
+      height: 2px
+      background-color: $main_color
+      left: 0
+      right: 0
+      bottom: -5px
+      transition: all .25s ease
+      margin:
+        bottom: 0
+        left: auto
+        right: auto
+
+.button-lit
+  min-width: 140px
+  text-decoration: none
+  font-size: rem(14)
+  background: $main_color
+  color: #fff
+  padding: 11px 0
+  border-radius: 20px
+  transition: all .2s linear
+  border: 2px solid transparent
+  cursor: pointer
+  text-transform: uppercase
+  background:
+    size: 150px
+    position: -10px
+  box-shadow: 0 0 0 rgba(0, 0, 0, .18)
+  margin-right: 15px
+  &:last-child
+    margin-right: 0
+  &:hover
+    transform: scale(1.1)
+  &--bg
+    background-color: $button-lit_bg-color
+
+.header-buttons__item--block
+  display: none
+
+#nav-icon3
+  width: 40px
+  display: none
+  height: 27px
+  position: relative
+  transform: rotate(0deg)
+  transition: .5s ease-in-out
+  cursor: pointer
+  margin-left: 20px
+
+#nav-icon3 span
+  display: block
+  position: absolute
+  height: 5px
+  width: 100%
+  background: #fff
+  border-radius: 9px
+  opacity: 1
+  left: 0
+
+#nav-icon3
+  span
+    &:nth-child(1)
+      top: 0px
+    &:nth-child(2), &:nth-child(3)
+      top: 12px
+    &:nth-child(4)
+      top: 23px
+  &.open span
+    &:nth-child(1)
+      top: 18px
+      width: 0%
+      left: 50%
+    &:nth-child(2)
+      transform: rotate(45deg)
+    &:nth-child(3)
+      transform: rotate(-45deg)
+    &:nth-child(4)
+      top: 18px
+      width: 0%
+      left: 50%
+
+@media (max-width: $screen-lg)
+  .header
+    &-navigation
+      &__link
+        font-size: rem(13)
+    &-lang
+      &__item
+        width: 30px
+  .button-lit
+    font-size: rem(11)
+
+@media (max-width: $screen-md)
+  .header
+    &-navigation
+      &__items
+        padding:
+          top: 8px
+          bottom: 8px
+      &__link
+        font-size: rem(11)
+    &-lang
+      &__item
+        width: 20px      
+    &-certificate
+      &__item
+        height: 40px
+    &-elements
+      &__top
+        margin:
+          top: 8px
+          bottom: 8px
+  .button-lit
+    font-size: rem(11)
+    min-width: 115px
+    padding: 8px 0
+  ul.header-lang__items
+    top: 20px
+
+@media (max-width: 862px)
+  #nav-icon3
+    display: block
+  .header
+    padding-top: 5px
+    &-navigation
+      position: fixed
+      left: 0
+      bottom: 0
+      top: 0
+      transition: all .25s ease
+      z-index: 7
+      transform: translateX(-250px)
+      &--active
+        transform: translateX(0)
+        transition: all .25s ease
+      &__items
+        flex-direction: column
+      &__item
+        margin: 0
+      &__link
+        display: block
+        padding: 15px
+        font-size: rem(17)
+        &:after
+          display: none
+    &-wrap
+      &--left
+        z-index: 9
+    &-certificate
+      display: none
+    &-elements
+      &__top
+        display: none
+    &-line
+      display: none
+    &-lang
+      &__item
+        width: 35px
+
+    &-buttons
+      &__item
+        &--block
+          display: flex !important
+          height: 40px
+          padding-bottom: 10px
+          background-color: #000
+          overflow: hidden
+          position: absolute
+          bottom: 0
+          width: 100%
+          justify-content: space-around
+
+    &-navigation
+      &__items
+        position: relative
+        padding-top: 0
+        top: 70px
+        overflow: auto
+        height: 100%
+        bottom: 0
+    .button-lit
+      margin: 0
+      transform: scale(1)
+
+  .header-navigation
+    background: #000
+    height: 100%
+    top: 0
+    width: 250px
+    bottom: 0
+
+  .header-navigation__item
+    .active
+      color: $main_color
+      &:after
+        display: none
+  ul.header-lang__items
+    top: 0
+    left: -50px

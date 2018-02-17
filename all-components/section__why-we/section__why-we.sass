@@ -1,0 +1,61 @@
+/* STYLES */
+.why-we
+  background-image: url("../img/why-we-bg.png")
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 100px 0
+  position: relative
+  color: #fff
+  text-align: center
+
+  &__title
+    font-weight: bold
+    font-size: rem(120)
+    text-transform: uppercase
+    z-index: 2
+    position: relative
+
+    &:after
+      content: ''
+      width: 170px
+      height: 10px
+      background-color: rgba(#fff, .1)
+      display: block
+      margin: 17px auto 39px
+
+  &__desc
+    font-size: rem(24)
+    font-weight: 300
+    max-width: 760px
+    margin: 0 auto
+    z-index: 2
+    position: relative
+
+  &__img
+    position: absolute
+    width: 29vw
+    right: 0
+    top: 0
+    z-index: 1
+
+@media (max-width: 1200px)
+  .why-we
+    &__title
+      font-size: rem(100)
+
+@media (max-width: 992px)
+  .why-we
+    &__img
+      display: none
+
+@media (max-width: 767px)
+  .why-we__title:after
+    width: 80px
+
+  .why-we
+    &__title
+      font-size: rem(75)
+
+    &__desc
+      font-size: rem(20)
+      line-height: 1.5

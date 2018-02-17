@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Constructor</title>
+    <link rel="stylesheet" href="constructor-files/style.css">
+    <link rel="stylesheet" href="constructor-files/bootstrap.css">
+</head>
+<body>
+    <div id="app">
+        <div class="preloader" v-show="sendSuccess">
+            <div id="loader"></div>
+        </div>
+        <header class="header">
+            <div class="header__wrap">
+                <div class="header__logo">
+                    <div class="logo">
+                        <a href="constructor.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <nav class="menu">
+                        <ul class="menu__items">
+                            <li class="menu__item">
+                                <a class="menu__link" href="constructor.html">Конструктор</a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="documentation.html">Документация</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="panelP">
+            <div class="panelP-left">
+                <div class="panelP-left__wrap">
+                    <form class="constructor__form " id="send-form" v-on:submit="send" type="GET">
+                        <div class="constructor__row">
+                            <div class="constructor__items" id="trash">
+
+                                <draggable v-model="choosen">
+                                    <transition-group>
+                                        <choosen-components-list v-if="choosen.length" v-for="(component, index) in choosen"
+                                        :key="index"
+                                        :index="index"
+                                        :component="component"
+                                        :removefn="remove"
+                                        :openfn="open"
+                                        :addfn="add">
+                                    </choosen-components-list>
+                                    </transition-group>
+                                </draggable>
+
+                            </div>
+                        </div>
+                        <div class="constructor__button">
+                            <button type="submit" class="btn">Компилировать</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="constructor ">
+                <div class="constructor__content">
+                    <h2>Шаблоны</h2>
+                    <div class="constructor__templates">
+
+                       <templates-list v-for="(template, index) in templates"
+                            :key="index"
+                            :index="index"
+                            :template="template"
+                            :openfn="open"
+                            :addfn="addTemplate">
+                        </templates-list>
+
+                   </div>
+                    <h2>Компоненты</h2>
+                    <div class="constructor__elements">
+
+                       <components-list v-for="component in components"
+                            :key="component.name"
+                            :component="component"
+                            :openfn="open"
+                            :addfn="add">
+                        </components-list>
+
+                   </div>
+
+               </div>
+            </div>
+        </div>
+
+        <div class="popupImg" v-bind:class="{ active: imgShow.state }" v-on:click="close">            
+            <div class="popupImg__close" v-on:click="close"><span class="glyphicon glyphicon-remove"></span></div>
+            <div class="popupImg--center">
+                <div class="popupImg__item">
+                    <img v-bind:src="imgShow.src" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- CDNJS :: Vue (https://cdnjs.com/) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.2/vue.min.js"></script>
+
+<!-- CDNJS :: Sortable (https://cdnjs.com/) -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.7.0/Sortable.min.js"></script>
+
+<!-- CDNJS :: Vue.Draggable (https://cdnjs.com/) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Vue.Draggable/2.15.0/vuedraggable.min.js"></script>
+
+<script src="constructor.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+/* STYLES */
+.section-reviews 
+  padding: 35px 0
+
+.section-reviews .caption 
+  font-size: rem(30)
+  color: #378c55
+  text-align: center
+  margin-bottom: 30px
+
+.div-reviews 
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+
+.div-reviews > div 
+  max-width: 300px
+  text-align: center
+  @media (max-width: $screen-sm)
+    margin-bottom: 30px
+
+.div-reviews img 
+  border-radius: 40px
+  height: 80px
+  width: 80px
+  object-fit: cover
+  display: inline-block
+  margin-bottom: 15px
+
+.div-reviews p 
+  font-size: rem(18)
+  color: #000
+  font-style: italic
+  max-width: 80%
+  margin: 0 auto
+
+@media (max-width: $screen-sm)
+  .div-reviews 
+    flex-wrap: wrap
+    justify-content: center
+
+@media (max-width: $screen-xs) 
+  .div-reviews 
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: auto
+
+    & > div
+      margin: 10px 0

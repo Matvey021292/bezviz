@@ -1,0 +1,38 @@
+$logotype__background-color: #131416;
+
+// Высота блока
+// $item-height + ($block-padding * 2) + ($item-margin * 2)
+$logotype__item-height: 40px;
+$logotype__item-margin: 25px;
+$logotype__block-padding: 10px;
+
+.logotype {
+	width: 100%;
+	background-color: $logotype__background-color;
+	overflow: hidden;
+	padding-top: $logotype__block-padding;
+	padding-bottom: $logotype__block-padding;
+}
+
+.logotype-content {
+	text-align: center;
+}
+
+.logotype-item {
+	display: block;
+	height: $logotype__item-height;
+	vertical-align: middle;
+	cursor: default;
+	margin-top: $logotype__item-margin;
+	margin-bottom: $logotype__item-margin;
+	img {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+		max-height: 100%;
+		transition: transform .5s linear;
+		&:hover {
+			transform: scale(1.1) rotate(5deg);
+		}
+	}
+}

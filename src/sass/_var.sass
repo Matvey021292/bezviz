@@ -1,0 +1,15 @@
+//Акцентный цвет
+$default-color: #000
+//Акцентный цвет фона
+$default-bg-color: #fff
+//Акцентный цвет фона
+$default-font: 'lasco', sans-serif
+//Отступы между секциями
+$section-margin: 50px
+//Переводим px в em
+//Пример
+//  html,body
+//    font-size: $font-size+px
+$font-size: 14
+@function rem($pixel, $context: $font-size)
+  @return #{($pixel/$context)}rem

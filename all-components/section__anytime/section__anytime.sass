@@ -1,0 +1,36 @@
+/* VARIABLES */
+
+$header_color: #1a1b1d
+
+/* STYLES */
+
+.info-block__header
+  color: $header_color
+  font-size: rem(28)
+
+.info-block__header span 
+  font-weight: bold
+  display: block
+
+.info-block__cont 
+  display: flex
+  align-items: center
+  margin-top: 70px
+  margin-bottom: 70px
+
+.info-block__img 
+  padding-right: 60px
+  width: 50%
+
+.info-block__img img 
+  width: 100%
+
+.info-block__text 
+  width: 50%
+
+@media (max-width: $screen-xs) 
+  .info-block__img 
+    display: none
+    
+  .info-block__text 
+    width: 100%

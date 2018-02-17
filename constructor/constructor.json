@@ -1,0 +1,468 @@
+ {
+  "footer--eng": {
+    "name": "footer--eng",
+    "sass": [
+      "./src/components/footer--eng/footer--eng"
+    ],
+    "html": [
+      "components/footer--eng/footer--eng.html"
+    ],
+    "img": "footer--eng/screenshot.PNG"
+  },
+  "footer--rus": {
+    "name":"footer--rus",
+    "sass": [
+      "./src/components/footer--rus/footer--rus"
+    ],
+    "html": [
+      "components/footer--rus/footer--rus.html"
+    ],
+    "img": "footer--rus/screenshot.PNG"
+  },
+  "footer--clean": {
+    "name":"footer--clean",
+    "sass": [
+      "./src/components/footer--clean/footer--clean"
+    ],
+    "html": [
+      "components/footer--clean/footer--clean.html"
+    ],
+    "img": "footer--clean/screenshot.PNG"
+  },
+  "form--eng": {
+    "name":"form--eng",
+    "sass": [
+      "./src/components/form--eng/form",
+      "./src/components/form--eng/intlTelInput"
+    ],
+    "js": [
+      "./src/components/form--eng/form.js",
+      "./src/components/form--eng/intlTelInput.min.js"
+    ],
+    "html": [
+      "components/form--eng/form-1.html",
+      "components/form--eng/form-2.html",
+      "components/form--eng/call-back.html"
+    ],
+    "img": "form--eng/screenshot.png"
+  },
+   "form-popup-timeout--eng": {
+     "name":"form-popup-timeout--eng",
+     "sass": [
+       "./src/components/form-popup-timeout--eng/form",
+       "./src/components/form-popup-timeout--eng/form-popup-timeout",
+       "./src/components/form-popup-timeout--eng/intlTelInput"
+     ],
+     "js": [
+       "./src/components/form-popup-timeout--eng/form.js",
+       "./src/components/form-popup-timeout--eng/intlTelInput.min.js"
+     ],
+     "html": [
+       "components/form-popup-timeout--eng/form-1.html",
+       "components/form-popup-timeout--eng/form-2.html",
+       "components/form-popup-timeout--eng/call-back.html"
+     ],
+     "img": "form-popup-timeout--eng/screenshot.jpg"
+   },
+   "form--rus": {
+     "name":"form--rus",
+     "sass": [
+       "./src/components/form--rus/form",
+       "./src/components/form--rus/intlTelInput"
+     ],
+     "js": [
+       "./src/components/form--rus/form.js",
+       "./src/components/form--rus/intlTelInput.min.js"
+     ],
+     "html": [
+       "components/form--rus/form-1.html",
+       "components/form--rus/form-2.html",
+       "components/form--rus/call-back.html"
+     ],
+     "img": "form--rus/screenshot.png"
+   },
+   "graph-widget": {
+     "name":"graph-widget",
+     "sass": [
+       "./src/components/graph-widget/widget"
+     ],
+     "js": [
+      "./src/components/graph-widget/animation_tweenlite.js",
+       "./src/components/graph-widget/widget.js"       
+     ],
+     "html": [
+       "components/graph-widget/widget.html"
+     ],
+     "img": "graph-widget/screenshot.png"
+   },
+   "head-content": {
+     "name":"head-content",
+     "sass": [
+       "./src/components/head-content/head-content"
+     ],
+     "html": [
+       "components/head-content/head-content.html"
+     ],
+     "img": "head-content/screenshot.PNG"
+   },
+   "header__trade": {
+     "name":"header__trade",
+     "sass": [
+       "./src/components/header__trade/header__trade"
+     ],
+     "html": [
+       "components/header__trade/header__trade.html"
+     ],
+     "img": "header__trade/screenshot.PNG"
+   },
+   "header__video": {
+     "name":"header__video",
+     "sass": [
+       "./src/components/header__video/header__video"
+     ],
+     "js": [
+       "./src/components/header__video/header__video.js"
+     ],
+     "html": [
+       "components/header__video/header__video.html"
+     ],
+     "img": "header__video/screenshot.PNG"
+   },
+   "header--bitcoin": {
+     "name":"header--bitcoin",
+     "sass": [
+       "./src/components/header--bitcoin/header--bitcoin"
+     ],
+     "js": [
+       "./src/components/header--bitcoin/header--bitcoin.js"
+     ],
+     "html": [
+       "components/header--bitcoin/header--bitcoin.html"
+     ],
+     "img": "header--bitcoin/screenshot.PNG"
+   },
+   "header--eng": {
+     "name":"header--eng",
+     "sass": [
+       "./src/components/header--eng/header--eng"
+     ],
+     "js": [
+       "./src/components/header--eng/header--eng.js"
+     ],
+     "html": [
+       "components/header--eng/header--eng.html"
+     ],
+     "img": "header--eng/screenshot.PNG"
+   },
+   "header--rus": {
+     "name":"header--rus",
+     "sass": [
+       "./src/components/header--rus/header--rus"
+     ],
+     "js": [
+       "./src/components/header--rus/header--rus.js"
+     ],
+     "html": [
+       "components/header--rus/header--rus.html"
+     ],
+     "img": "header--rus/screenshot.jpg"
+   },
+   "logotype": {
+     "name":"logotype",
+     "sass": [
+       "./src/components/logotype/logotype"
+     ],
+     "html": [
+       "components/logotype/logotype.html"
+     ],
+     "img": "logotype/screenshot.jpg"
+   },
+   "map": {
+     "name":"map",
+     "sass": [
+       "./src/components/map/map"
+     ],
+     "html": [
+       "components/map/map.html"
+     ],
+     "img": "map/screenshot.PNG"
+   },
+   "rss": {
+     "name":"rss",
+     "sass": [
+       "./src/components/rss/rss"
+     ],
+     "js": [
+      "./src/components/rss/socket-io.js",
+       "./src/components/rss/rss.js",
+       "./src/components/rss/readmore.js",
+       "./src/components/rss/moment-with-locales.js"       
+     ],
+     "html": [
+       "components/rss/rss.html"
+     ],
+     "img": "rss/screenshot.png"
+   },
+   "section__advantages": {
+     "name":"section__advantages",
+     "sass": [
+       "./src/components/section__advantages/section__advantages"
+     ],
+     "html": [
+       "components/section__advantages/section__advantages.html"
+     ],
+     "img": "section__advantages/screenshot.PNG"
+   },
+   "section__anytime": {
+     "name":"section__anytime",
+     "sass": [
+       "./src/components/section__anytime/section__anytime"
+     ],
+     "html": [
+       "components/section__anytime/section__anytime.html"
+     ],
+     "img": "section__anytime/screenshot.PNG"
+   },
+   "section__button": {
+     "name":"section__button",
+     "sass": [
+       "./src/components/section__button/section__button"
+     ],
+     "html": [
+       "components/section__button/section__button.html"
+     ],
+     "img": "section__button/screenshot.PNG"
+   },
+   "section__chapters": {
+     "name":"section__chapters",
+     "sass": [
+       "./src/components/section__chapters/section__chapters"
+     ],
+     "html": [
+       "components/section__chapters/section__chapters.html"
+     ],
+     "img": "section__chapters/screenshot.PNG"
+   },
+   "section__comments": {
+     "name":"section__comments",
+     "sass": [
+       "./src/components/section__comments/section__comments"
+     ],
+     "js": [
+       "./src/components/section__comments/section__comments.js"
+     ],
+     "libsJs": [
+       "./src/libs/slick/slick.js"
+     ],
+     "libsSass": [
+       "./src/libs/slick/slick.scss",
+       "./src/libs/slick/slick-theme.scss"
+     ],
+     "html": [
+       "components/section__comments/section__comments.html"
+     ],
+     "img": "section__comments/screenshot.png"
+   },
+   "table": {
+     "name":"table",
+     "sass": [
+       "./src/components/table/table"
+     ],
+     "libsJs": [
+       "./src/libs/slick/slick.js"
+     ],
+     "js": [
+       "./src/components/table/table.js"
+     ],
+     "html": [
+       "components/table/table.html"
+     ],
+     "img": "table/screenshot.jpg"
+   },
+   "slider": {
+     "name": "slider",
+     "sass": [
+       "./src/components/slider/slider"
+     ],
+     "js": [
+       "./src/components/slider/slider.js"
+     ],
+     "libsJs": [
+       "./src/libs/slick/slick.js"
+     ],
+     "libsSass": [
+       "./src/libs/slick/slick.scss",
+       "./src/libs/slick/slick-theme.scss"
+     ],
+     "html": [
+       "components/slider/slider.html"
+     ],
+     "img": "slider/screenshot.jpg"
+   },
+   "section__why-we": {
+     "name":"section__why-we",
+     "sass": [
+       "./src/components/section__why-we/section__why-we"
+     ],
+     "html": [
+       "components/section__why-we/section__why-we.html"
+     ],
+     "img": "section__why-we/screenshot.PNG"
+   },
+   "section__testimonials": {
+     "name":"section__testimonials",
+     "sass": [
+       "./src/components/section__testimonials/section__testimonials"
+     ],
+     "html": [
+       "components/section__testimonials/section__testimonials.html"
+     ],
+     "img": "section__testimonials/screenshot.PNG"
+   },
+   "section__reasons": {
+     "name":"section__reasons",
+     "sass": [
+       "./src/components/section__reasons/section__reasons"
+     ],
+     "html": [
+       "components/section__reasons/section__reasons.html"
+     ],
+     "img": "section__reasons/screenshot.PNG"
+   },
+   "section__odds": {
+     "name":"section__odds",
+     "sass": [
+       "./src/components/section__odds/section__odds"
+     ],
+     "html": [
+       "components/section__odds/section__odds.html"
+     ],
+     "img": "section__odds/screenshot.PNG"
+   },
+   "section__info": {
+     "name":"section__info",
+     "sass": [
+       "./src/components/section__info/section__info"
+     ],
+     "html": [
+       "components/section__info/section__info.html"
+     ],
+     "img": "section__info/screenshot.PNG"
+   },
+   "section__icons": {
+     "name":"section__icons",
+     "sass": [
+       "./src/components/section__icons/section__icons"
+     ],
+     "html": [
+       "components/section__icons/section__icons.html"
+     ],
+     "img": "section__icons/screenshot.PNG"
+   },
+   "section__fullvideo": {
+     "name":"section__fullvideo",
+     "sass": [
+       "./src/components/section__fullvideo/section__fullvideo"
+     ],
+     "libsJs": [
+       "./src/libs/vide/jquery.vide.js"
+     ],
+     "js": [
+       "./src/components/section__fullvideo/section__fullvideo.js"
+     ],
+     "html": [
+       "components/section__fullvideo/section__fullvideo.html"
+     ],
+     "img": "section__fullvideo/screenshot.jpg"
+   },
+   "section__dollars": {
+     "name":"section__dollars",
+     "sass": [
+       "./src/components/section__dollars/section__dollars"
+     ],
+     "html": [
+       "components/section__dollars/section__dollars.html"
+     ],
+     "img": "section__dollars/screenshot.PNG"
+   },
+   "grid_2x3": {
+     "name":"grid_2x3",
+     "sass": [
+       "./src/components/grid_2x3/grid_2x3"
+     ],
+     "html": [
+       "components/grid_2x3/grid_2x3.html"
+     ],
+     "img": "grid_2x3/screenshot.PNG"
+   },   
+   "preloader": {
+     "name":"preloader",
+     "sass": [
+       "./src/components/preloader/preloader"
+     ],     
+     "html": [
+       "components/preloader/preloader.html"
+     ],
+     "img": "preloader/screenshot.png"
+   },
+   "flex_1x4": {
+     "name":"flex_1x4",
+     "sass": [
+       "./src/components/flex_1x4/flex_1x4"
+     ],     
+     "html": [
+       "components/flex_1x4/flex_1x4.html"
+     ],
+     "img": "flex_1x4/screenshot.png"
+   },
+   "grid_2x4_fullwidth": {
+     "name":"grid_2x4_fullwidth",
+     "sass": [
+       "./src/components/grid_2x4_fullwidth/grid_2x4_fullwidth"
+     ],     
+     "html": [
+       "components/grid_2x4_fullwidth/grid_2x4_fullwidth.html"
+     ],
+     "img": "grid_2x4_fullwidth/screenshot.png"
+   },
+   "choose_plan": {
+     "name":"choose_plan",
+     "sass": [
+       "./src/components/choose_plan/choose_plan"
+     ],     
+     "html": [
+       "components/choose_plan/choose_plan.html"
+     ],
+     "img": "choose_plan/screenshot.png"
+   },
+   "flex_4x2": {
+     "name":"flex_4x2",
+     "sass": [
+       "./src/components/flex_4x2/flex_4x2"
+     ],     
+     "html": [
+       "components/flex_4x2/flex_4x2.html"
+     ],
+     "img": "flex_4x2/screenshot.png"
+   },
+   "grid_1x2": {
+     "name":"grid_1x2",
+     "sass": [
+       "./src/components/grid_1x2/grid_1x2"
+     ],
+     "html": [
+       "components/grid_1x2/grid_1x2.html"
+     ],
+     "img": "grid_1x2/screenshot.PNG"
+   },
+   "grid_3x3": {
+     "name":"grid_3x3",
+     "sass": [
+       "./src/components/grid_3x3/grid_3x3"
+     ],
+     "html": [
+       "components/grid_3x3/grid_3x3.html"
+     ],
+     "img": "grid_3x3/screenshot.PNG"
+   }
+}

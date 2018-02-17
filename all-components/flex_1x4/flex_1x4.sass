@@ -1,0 +1,32 @@
+.flex__row
+	margin-top: 30px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	@media screen and (max-width: $screen-md)
+		flex-wrap: wrap
+	@media screen and (max-width: $screen-sm)
+		justify-content: center
+.flex__item
+	width: 22%
+	margin-bottom: 20px	
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center	
+	@media screen and (max-width: $screen-md)
+		width: 47%
+	@media screen and (max-width: $screen-sm)
+		width: 90%
+	.picture
+		width: 200px
+		height: 200px
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: #e5e5e5
+		font-size: rem(20)
+	h3
+		margin-bottom: 20px
+	p
+		text-align: center

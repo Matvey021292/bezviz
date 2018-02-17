@@ -1,0 +1,57 @@
+/* STYLES */
+.dollars
+  background: url("../img/dollars-bg.jpg")
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+
+.dollars-desc
+  padding-top: 87px
+  padding-bottom: 104px
+  max-width: 800px
+  margin: 0 auto
+  position: relative
+
+  &__title
+    font-weight: bold
+    font-size: rem(52)
+    font-weight: 400
+    text-transform: uppercase
+    color: #fff
+    line-height: 1.2
+    text-align: center
+    position: relative
+
+  &__embed
+    font-weight: bold
+    color: #fc0
+
+  &__img
+    position: absolute
+    bottom: -9%
+    left: -32%
+    z-index: 10
+
+@media (max-width: $screen-lg)
+  .dollars-desc
+    &__img
+      width: 40%
+      left: -15%
+
+@media (max-width: $screen-md)
+  .dollars-desc
+    &__title
+      font-size: rem(62)
+
+@media (max-width: $screen-sm)
+  .dollars-desc
+    &__title
+      font-size: rem(45)
+
+    &__img
+      display: none
+
+@media (max-width: $screen-xs)
+  .dollars-desc
+    &__title
+      font-size: rem(28)

@@ -1,0 +1,39 @@
+{
+  "name": "startpage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "express": "^4.16.2",
+    "formidable": "^1.1.1",
+    "fs": "0.0.1-security",
+    "fs-extra": "^4.0.2",
+    "gulp": "^3.9.1",
+    "gulp-request": "0.0.1",
+    "http": "0.0.0",
+    "path": "^0.12.7",
+    "replace": "^0.3.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cache": "^1.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-file-include": "^1.2.0",
+    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-js-import": "^1.0.6",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "rimraf": "^2.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start http://localhost:8081 && node constructor.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

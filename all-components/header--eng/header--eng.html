@@ -1,0 +1,77 @@
+<header class="header">
+    <div class="container-fluid">
+        <div class="header-container">
+            <div class="header-wrap header-wrap--left">
+                <div class="header-logo">
+                    <div class="header-logo__img">
+                        <a href=""><img src="img/logo.png" alt="alt"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrap header-wrap--right">
+                <div class="header-elements">
+                    <div class="header-elements__top">
+                        <div class="header-buttons">
+                            <div class="header-buttons__item">
+                                <button class="button-lit button-lit--bg">Log In</button>
+                                <button class="button-lit">OPEN AN ACCOUNT</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-line"></div>
+
+                    <div class="header-elements__bottom">
+                        <nav class="header-navigation">
+                            <ul class="header-navigation__items">
+                                @@loop('nav--eng.html', [
+                                {
+                                "link": "#",
+                                "name": "Home",
+                                "activeClass": "active"
+                                },{
+                                "link": "#",
+                                "name": "Accounts"
+                                },{
+                                "link": "#",
+                                "name": "Market analysis"
+                                },{
+                                "link": "#",
+                                "name": "Education"
+                                },{
+                                "link": "#",
+                                "name": "Bonuses"
+                                },
+                                {
+                                "link": "#",
+                                "name": "About us"
+                                }
+                                ])
+                            </ul>
+                            <div class="header-buttons__item header-buttons__item--block">
+                                <button class="button-lit button-lit--bg">Log In</button>
+                                <button class="button-lit">OPEN AN ACCOUNT</button>
+                            </div>
+                        </nav>
+                        <div class="header-lang">
+                            <div class="header-lang__item">
+                                <img class="header-lang__img" src="img/gre.svg" alt="">
+                            </div>
+                            <ul class="header-lang__items">
+                                <li class="header-lang__item">
+                                    <a class="header-lang__link" href=""><img class="header-lang__img" src="img/rus.svg" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="nav-icon3">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

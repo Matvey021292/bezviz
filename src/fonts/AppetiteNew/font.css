@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AppetiteNew';
+  src: url('AppetiteNew.eot');
+  src: url('AppetiteNew.woff2') format('woff2'),
+       url('AppetiteNew.woff') format('woff'),
+       url('AppetiteNew.ttf') format('truetype'),
+       url('AppetiteNew.svg#AppetiteNew') format('svg'),
+       url('AppetiteNew.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="constructor-files/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__wrap">
+        <div class="header__logo">
+            <div class="logo">
+                <a href="constructor.html"><img src="img/logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="header__menu">
+            <nav class="menu">
+                <ul class="menu__items">
+                    <li class="menu__item">
+                        <a class="menu__link" href="constructor.html">Конструктор</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="documentation.html">Документация</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="documentation">
+    <div class="container">
+        <div class="documentation__content">
+            <p>
+                Для работы с данным конструктором необходимо иметь последнюю версию NodeJS, скачать которую можно на официальном сайте <a class="node" href="https://nodejs.org/uk/" target="_blank">NodeJS</a>, так как используются новые функции ES7.
+            </p>
+            <p>
+                Если после обновления NodeJS у вас возникает ошибка при запуске скрипта, необходимо прописать в консоли <code>npm rebuild node-sass --force</code>.
+            </p>
+            <p>
+                Компоненты в левой колонке необходимо выстраивать в таком порядке, в котором хотите их видеть на сайте.
+            </p>
+            <p>
+                После выбора нужных компонентов необходимо остановить в консоли процесс start с помощью <code>Ctrl + C</code> и запустить новый процесс <code>gulp</code>, который соберет весь сайт в папку <b>build</b>. При любых изменениях файлов в папке <b>src</b> браузер автоматически перезагрузится.
+            </p>
+            <p class="important">
+                Если вы забыли сразу добавить нужный компонент, то останавливаем процесс gulp, запускаем <code>npm start</code> и выбираем все нужные компоненты, а не только <b>новые</b>, так как при копировании компонентов папка <b>src/components</b> будет очищаться.
+            </p>
+            <p>
+                Удачи в ваших начинаниях!
+            </p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

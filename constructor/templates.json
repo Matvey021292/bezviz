@@ -1,0 +1,223 @@
+{
+	"adwards": {
+		"components": {
+			"header--rus": {
+			    "name":"header--rus",
+			    "sass": [
+			    	"./src/components/header--rus/header--rus"
+			    ],
+			    "js": [
+			    	"./src/components/header--rus/header--rus.js"
+			    ],
+			    "html": [
+			    	"components/header--rus/header--rus.html"
+			    ],
+			    "img": "header--rus/screenshot.jpg"
+			},
+			"head-content": {
+			    "name":"head-content",
+			    "sass": [
+			    	"./src/components/head-content/head-content"
+			    ],
+			    "html": [
+			    	"components/head-content/head-content.html"
+			    ],
+			    "img": "head-content/screenshot.PNG"
+			},
+			"section__odds": {
+			    "name":"section__odds",
+			    "sass": [
+			    	"./src/components/section__odds/section__odds"
+			    ],
+			    "html": [
+			    	"components/section__odds/section__odds.html"
+			    ],
+			    "img": "section__odds/screenshot.PNG"
+			},
+			"section__dollars": {
+			    "name":"section__dollars",
+			    "sass": [
+			    	"./src/components/section__dollars/section__dollars"
+			    ],
+			    "html": [
+			    	"components/section__dollars/section__dollars.html"
+			    ],
+			    "img": "section__dollars/screenshot.PNG"
+			},
+			"section__why-we": {
+			    "name":"section__why-we",
+			    "sass": [
+			    	"./src/components/section__why-we/section__why-we"
+			    ],
+			    "html": [
+			    	"components/section__why-we/section__why-we.html"
+			    ],
+			    "img": "section__why-we/screenshot.PNG"
+			},
+			"footer--rus": {
+			    "name":"footer--rus",
+			    "sass": [
+			    	"./src/components/footer--rus/footer--rus"
+			    ],
+			    "html": [
+			    	"components/footer--rus/footer--rus.html"
+			    ],
+			    "img": "footer--rus/screenshot.PNG"
+			}
+		},
+		"screenshot": "img/adwards.png"
+	},
+	"land01__template": {
+		"components": {
+			"header--rus": {
+			    "name":"header--rus",
+			    "sass": [
+			    	"./src/components/header--rus/header--rus"
+			    ],
+			    "js": [
+			    	"./src/components/header--rus/header--rus.js"
+			    ],
+			    "html": [
+			    	"components/header--rus/header--rus.html"
+			    ],
+			    "img": "header--rus/screenshot.jpg"
+			},
+			"header__trade": {
+			    "name":"header__trade",
+			    "sass": [
+			    	"./src/components/header__trade/header__trade"
+			    ],
+			    "html": [
+			    	"components/header__trade/header__trade.html"
+			    ],
+			    "img": "header__trade/screenshot.PNG"
+			},
+			"section__testimonials": {
+			    "name":"section__testimonials",
+			    "sass": [
+			    	"./src/components/section__testimonials/section__testimonials"
+			    ],
+			    "html": [
+			    	"components/section__testimonials/section__testimonials.html"
+			    ],
+			    "img": "section__testimonials/screenshot.PNG"
+			},
+			"section__chapters": {
+			    "name":"section__chapters",
+			    "sass": [
+			    	"./src/components/section__chapters/section__chapters"
+			    ],
+			    "html": [
+			    	"components/section__chapters/section__chapters.html"
+			    ],
+			    "img": "section__chapters/screenshot.PNG"
+			},
+			"logotype": {
+			    "name":"logotype",
+			    "sass": [
+			    	"./src/components/logotype/logotype"
+			    ],
+			    "html": [
+			    	"components/logotype/logotype.html"
+			    ],
+			    "img": "logotype/screenshot.jpg"
+			},
+			"footer--rus": {
+			    "name":"footer--rus",
+			    "sass": [
+			    	"./src/components/footer--rus/footer--rus"
+			    ],
+			    "html": [
+			    	"components/footer--rus/footer--rus.html"
+			    ],
+			    "img": "footer--rus/screenshot.PNG"
+			}
+		},
+		"screenshot": "img/land01__template.png"
+	},
+	"bitcoin__template": {
+		"components": {
+			"header--bitcoin": {
+			    "name":"header--bitcoin",
+			    "sass": [
+			    	"./src/components/header--bitcoin/header--bitcoin"
+			    ],
+			    "html": [
+			    	"components/header--bitcoin/header--bitcoin.html"
+			    ],
+			    "img": "header--bitcoin/screenshot.PNG"
+			},
+			"section__advantages": {
+			    "name":"section__advantages",
+			    "sass": [
+			    	"./src/components/section__advantages/section__advantages"
+			    ],
+			    "html": [
+			    	"components/section__advantages/section__advantages.html"
+			    ],
+			    "img": "section__advantages/screenshot.PNG"
+			},
+			"section__comments": {
+			    "name":"section__comments",
+			    "sass": [
+			    	"./src/components/section__comments/section__comments"
+			    ],
+			    "js": [
+			    	"./src/components/section__comments/section__comments.js"
+			    ],
+			    "libsJs": [
+			    	"./src/libs/slick/slick.js"
+			    ],
+			    "libsSass": [
+			    	"./src/libs/slick/slick.scss",
+			    	"./src/libs/slick/slick-theme.scss"
+			    ],
+			    "html": [
+			    	"components/section__comments/section__comments.html"
+			    ],
+			    "img": "section__comments/screenshot.png"
+			},
+			"section__button": {
+			    "name":"section__button",
+			    "sass": [
+			    	"./src/components/section__button/section__button"
+			    ],
+			    "html": [
+			    	"components/section__button/section__button.html"
+			    ],
+			    "img": "section__button/screenshot.PNG"
+			},
+			"section__icons": {
+			    "name":"section__icons",
+			    "sass": [
+			    	"./src/components/section__icons/section__icons"
+			    ],
+			    "html": [
+			    	"components/section__icons/section__icons.html"
+			    ],
+			    "img": "section__icons/screenshot.PNG"
+			},
+			"logotype": {
+			    "name":"logotype",
+			    "sass": [
+			    	"./src/components/logotype/logotype"
+			    ],
+			    "html": [
+			    	"components/logotype/logotype.html"
+			    ],
+			    "img": "logotype/screenshot.jpg"
+			},
+			"footer--rus": {
+			    "name":"footer--rus",
+			    "sass": [
+			    	"./src/components/footer--rus/footer--rus"
+			    ],
+			    "html": [
+			    	"components/footer--rus/footer--rus.html"
+			    ],
+			    "img": "footer--rus/screenshot.PNG"
+			}
+		},
+		"screenshot": "img/bitcoin__template.png"
+	}
+}

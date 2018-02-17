@@ -1,0 +1,80 @@
+.rss
+  &__isoDate
+    text-transform: uppercase
+    margin-bottom: 15px
+    font-size: rem(11)
+    color: #939495
+  &__enclosure
+    float: left
+    width: 300px
+    padding-right: 10px
+    padding-bottom: 10px
+    img
+      width: 100%
+      display: block
+  &__title
+    margin-bottom: 20px
+    h1
+      margin: 0
+      font-size: rem(26)
+  &__wrap
+    overflow-y: hidden
+  &__check
+    cursor: pointer
+  &__content
+    font-size: rem(14)
+    p
+      margin: 0
+      text-indent: 5px
+      img
+        width: 100%
+  &__container
+    display: flex
+    align-items: flex-start
+    margin-bottom: 40px
+  &__l
+    background-color: #cc3366
+    padding: 15px
+    text-align: center
+    text-transform: uppercase
+    font-size: rem(20)
+    color: #fff
+  &__date
+    margin-right: 65px
+
+#pagination
+  margin-bottom: 30px
+  ul
+    display: flex
+    margin: 0
+    padding: 0
+    list-style-type: none
+    justify-content: center
+    li
+      a
+        padding: 5px
+        border-radius: 5px
+        border: 1px solid #cc3366
+        margin: 2px
+        font-size: rem(17)
+        text-decoration: none
+        cursor: pointer
+        display: block
+        color: #cc3366
+    .active
+      a
+        background-color: #cc3366
+        color: #fff
+        cursor: inherit
+
+@media (max-width: $screen-sm)
+  .rss
+    &__date
+      display: none
+    &__enclosure
+      width: 150px
+    &__title
+      h1
+        font-size: rem(21)
+    &__content
+      font-size: rem(13)

@@ -1,0 +1,191 @@
+.table {
+    width:100%;
+}
+
+.table thead {
+    text-transform: uppercase;
+    font-size: rem(18);
+    font-family: 'Roboto-Bold', sans-serif;
+    height: 150px;
+}
+.table thead p{
+    font-size: rem(24);
+    color: #ffcc00;
+    margin: 10px 0
+}
+.table .btn{
+    border-radius: 30px;
+    font-size: rem(14);
+    font-weight: 700;
+    border: 0;
+    background-color: #ffcc00;
+    padding: 12px 2px;
+    width: 120px;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+
+}
+
+.btn {
+    transition: transform .3s;
+    &:hover {
+        transform: scale(1.1);
+        color: #fff;
+    }
+}
+
+.table{
+    font-size: rem(14);
+    margin: 0 auto;
+    border-spacing: 0;
+    
+}
+.table-container .table td, .table-container .table th{
+     text-align: center;
+     color: #fff;
+     border-left: 1px solid #ccc;
+     border-top: 1px solid #333;
+}
+.table-container .table td:first-child,  .table-container .table th:first-child{
+    max-width: 270px;
+    text-align: left;
+    border-left: 0px solid #ccc;
+    min-width: 230px;
+}
+.tables-wrapper{
+    position: relative;
+    background-color: #1A1B1D;
+}
+#navigate-table{
+    max-width: 240px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    display: none;
+    background-color: #1a1b1c;
+    z-index: 9;
+}
+#navigate-table thead th{
+    text-align: center;
+}
+#navigate-table .controls button{
+    background-color: transparent;
+    border: 4px solid #ffcc00;
+    font-size: rem(18);
+    color: #fff;
+    padding: 2px 15px;
+    border-radius: 10px;
+}
+#navigate-table .controls button:hover{
+    transform: scale(1.1);
+}
+#navigate-table .arrow{
+    float: left;
+    padding: 5px 32px;
+}
+.slide-left, .slide-right {
+    cursor: pointer;
+}
+
+.table-container.full-info{
+    background-image: none;
+    padding: 30px 10px 0px 10px;
+}
+.tables-wrapper{
+    background-image: url(../img/planet.jpg);
+    background-repeat: no-repeat;
+    background-position: center 130%;
+    padding: 0px 10px 0px 10px;
+}
+.table{
+    border-collapse: inherit;
+}
+.table-container .table td, .table-container .table th {
+    text-align: center;
+    color: #fff;
+    border-left: 1px solid #333333;
+    vertical-align: middle;
+}
+.table > thead > tr > th{
+    border-bottom: 0;
+}
+.fa-check {
+    color: #33f157;
+}
+.fa-times {
+    color: #fe001e;
+}
+tbody td > i {
+    color: #ffcc00;
+    font-size: rem(12);
+}
+
+.table > tbody > tr > td {
+    padding: 15px 0;
+}
+@media (max-width: 1200px){
+    .table-container.full-info {
+        padding: 0px 0px 0px 0px;
+    }
+}
+@media (max-width: 1024px){
+    .table-container{
+        background-image: none;
+    }
+    .table-container .table td:first-child,  .table-container .table th:first-child{
+        max-width: 230px;
+
+    }
+}
+@media (max-width: 991px){
+    #navigate-table{
+        display: block;
+    }
+    #accounts-table{
+        background-color: #1a1b1c;
+    }
+}
+@media only screen and (max-width: 767px){
+    #navigate-table thead th {
+        padding: 28px 0 30px;
+    }
+    .table-responsive {
+        white-space: nowrap;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        border: 1px solid transparent;
+        border-right: 1px solid #333333;
+    }
+    #accounts-table.table-responsive{
+        border-right: 0;
+    }
+    
+    .table-responsive > .table > tbody > tr > td {
+        white-space: normal;
+    }
+    #navigate-table {
+        max-width: 232px;
+    }
+    .tables-wrapper {
+        margin: 0;
+    }
+
+}
+@media (max-width: 380px){
+    #navigate-table .table thead p {
+        font-size: rem(14);
+    }   
+    .table-container .table td:first-child, .table-container .table th:first-child {
+        max-width: 150px;
+        min-width: 150px;
+    }
+    #navigate-table .arrow {
+        padding: 5px 12px;
+    }
+    #navigate-table {
+        max-width: 152px;
+    }
+}

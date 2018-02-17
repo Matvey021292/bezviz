@@ -1,0 +1,127 @@
+$slider-height: 550px;
+$slider-primary-color: #ffcc00;
+
+.slider {
+	overflow: hidden;
+	.slick-dotted.slick-slider {
+		margin-bottom: 0;
+	}
+}
+
+.slider-container {
+	position: relative;
+	.container {
+		position: relative;
+		height: $slider-height;
+	}
+ 	.slick-dots {
+ 		bottom: 20px;
+ 		li {
+ 			margin: 0 5px;
+ 		}
+		li button:before {
+			font-family: 'FontAwesome';
+			content: '\f111';
+			font-size: rem(25);
+			color: #fff;
+			opacity: .8;
+		}
+		li.slick-active button {
+			&:before {
+				color: $slider-primary-color;
+				font-size: rem(15);
+				margin-left: 1px;
+			}
+		}
+	}
+}
+
+.slider-item-overlay {
+	@media (max-width: $screen-md) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(#000, .55);
+	}
+}
+
+.slider-item-content {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	.hr-yellow {
+		background-color: $slider-primary-color;
+	}
+}
+
+.slider-item-img {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-position: 60% 100%;
+	object-fit: cover;
+	z-index: -1;
+}
+
+.slider-item {
+	position: relative;
+	height: $slider-height;
+	.hr-yellow {
+		display: inline-block;
+	}
+}
+
+.slider-item-title {
+	font-size: rem(72);
+	font-weight: bold;
+	color: $slider-primary-color;
+	margin: 0;
+	@media (max-width: $screen-xs) {
+		font-size: rem(45);
+	}
+}
+
+.slider-item-text {
+	margin: 30px 0 50px;
+	color: #fff;
+	max-width: 500px;
+	font-size: rem(16);
+	line-height: 1.35;
+	@media (max-width: $screen-sm) {
+		padding-right: 15px;
+		max-width: 100%;
+	}
+}
+
+.slider-item-btn {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+	border: 3px solid $slider-primary-color;
+	width: 225px;
+	height: 60px;
+	border-radius: 35px;
+	font-size: rem(16);
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 52px;
+	font-weight: bold;
+	text-decoration: none;
+	user-select: none;
+	outline: none;
+	transition: all .2s linear;
+	&:hover {
+		background-color: $slider-primary-color;
+		transform: scale(1.1);
+		color: #000;
+	}
+}

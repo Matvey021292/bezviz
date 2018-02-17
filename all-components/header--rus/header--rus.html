@@ -1,0 +1,78 @@
+<header class="header">
+    <div class="container-fluid">
+        <div class="header-container">
+            <div class="header-wrap header-wrap--left">
+                <div class="header-logo">
+                    <div class="header-logo__img">
+                        <a href=""><img src="img/logo.png" alt="alt"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-wrap header-wrap--right">
+                <div class="header-elements">
+                    <div class="header-elements__top">
+                        <div class="header-buttons">
+                            <div class="header-buttons__item">
+                                <button class="button-lit button-lit--bg">Войти</button>
+                                <button class="button-lit">ОТКРЫТЬ СЧЕТ</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header-line"></div>
+
+                    <div class="header-elements__bottom">
+                        <nav class="header-navigation">
+                            <ul class="header-navigation__items">
+                                @@loop('nav--rus.html', [
+                                {
+                                "link": "#",
+                                "name": "Главная",
+                                "activeClass": "active"
+                                },{
+                                "link": "#",
+                                "name": "Типы счетов"
+                                },{
+                                "link": "#",
+                                "name": "Анализ рынка"
+                                },{
+                                "link": "#",
+                                "name": "Обучение"
+                                },{
+                                "link": "#",
+                                "name": "Бонусы и акции"
+                                },
+                                {
+                                "link": "#",
+                                "name": "О нас"
+                                }
+                                ])
+                            </ul>
+                            <div class="header-buttons__item header-buttons__item--block">
+                                <button class="button-lit button-lit--bg">Войти</button>
+                                <button class="button-lit">ОТКРЫТЬ СЧЕТ</button>
+                            </div>
+                        </nav>
+                        <div class="header-lang">
+                            <div class="header-lang__item">
+                                <img class="header-lang__img" src="img/rus.svg" alt="">
+                            </div>
+                            <ul class="header-lang__items">
+                                <li class="header-lang__item">
+                                    <a class="header-lang__link" href=""><img class="header-lang__img" src="img/gre.svg"
+                                                                              alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="nav-icon3">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

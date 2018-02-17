@@ -1,0 +1,134 @@
+/* VARIABLES */
+
+$dollars-desc__title_font-size: 72px
+$color-dark: #2d2d2e
+$clients__embed_color: #378c55
+$client-review_bg: #e8e8e8
+$form-title_font-size: 24px
+$client-review__desc_font-size: 14px
+$white: #000
+$owl-prev_bg-image: url("../img/left-arrow.png")
+$owl-next_bg-image: url("../img/right-arrow.png")
+$media_small_clients__title_font-size: 10.5vw
+$popup-title_font-size: 48px
+$contacts__title: 40px
+
+/* STYLES */
+ 
+.clearfix:after 
+  content: ""
+  display: block
+  clear: both
+
+.clients
+  padding: 75px 0 100px
+
+  &__title
+    font-family: Bebas, sans-serif
+    color: $color-dark
+    font-size: $dollars-desc__title_font-size
+    text-align: center
+
+  &__embed
+    font-family: Bebas, sans-serif
+    font-weight: bold
+    color: $clients__embed_color
+
+.client-review
+  max-width: 300px
+  background: $client-review_bg
+  padding: 75px 30px 34px
+  text-align: center
+  position: relative
+  margin: 0 auto
+
+  &__img
+    position: absolute
+    top: -75px
+    left: 50%
+    transform: translateX(-50%)
+    width: auto !important
+
+  &__title
+    font-family: Bebas, sans-serif
+    font-weight: bold
+    color: $color-dark
+    font-size: $form-title_font-size
+    margin-top: 20px
+
+    &:after
+      content: ''
+      width: 30px
+      height: 2px
+      background: $color-dark
+      display: block
+      margin: 14px auto 20px
+      
+  &__desc
+    text-align: left
+    font-size: $client-review__desc_font-size
+    font-weight: 300
+    color: $color-dark
+    line-height: 20px
+
+.owl-carousel
+  display: none
+
+.owl-item
+  padding: 100px 0 0
+  background: $white
+
+.owl-nav
+  position: relative
+
+.owl-prev, .owl-next
+  width: 28px
+  height: 106px
+  position: absolute
+  top: -245px
+
+.owl-prev
+  background: $owl-prev_bg-image no-repeat center
+  left: -30px
+
+.owl-next
+  background: $owl-next_bg-image no-repeat center
+  right: -30px
+
+.owl-prev.disabled,
+.owl-next.disabled
+  opacity: .3
+
+@media (max-width: 1270px)
+  .owl-next
+    right: -10px
+
+  .owl-prev
+    left: -10px
+
+@media (max-width: 767px)
+  .clients
+    &__title
+      font-size: $contacts__title
+  .owl-next
+    right: 20px
+
+  .owl-prev
+    left: 20px
+
+@media (max-width: 555px)
+  .clients
+    &__title
+      font-size: $media_small_clients__title_font-size
+
+@media (max-width: 400px)
+  .clients
+    &__title
+      font-size: $popup-title_font-size
+      line-height: 50px
+
+  .owl-next
+    right: 0
+
+  .owl-prev
+    left: 0

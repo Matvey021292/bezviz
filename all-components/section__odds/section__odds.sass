@@ -1,0 +1,27 @@
+/* STYLES */
+.odds
+  background-image: url("../img/odds-bg.jpg")
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  padding: 50px 0 100px
+
+  &__item
+    margin-top: 50px
+    text-align: center
+    font-size: rem(16)
+    color: #000
+    font-weight: 300
+    line-height: 1.5
+    position: relative
+    p
+      margin: 0
+
+  &__icon
+    margin-bottom: 45px
+
+@media (max-width: $screen-sm)
+  .odds
+    &__item
+      max-width: 500px
+      margin: 50px auto 0

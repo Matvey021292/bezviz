@@ -1,0 +1,47 @@
+/* VARIABLES */
+
+$main_color: #fc0
+$risks_bg: #161616
+$risks__content_color: #484949
+
+/* STYLES */
+
+.risks
+  background: $risks_bg
+  padding: 20px 0
+
+  &__content
+    color: $risks__content_color
+    font-weight: 300
+    max-width: 1000px
+    text-align: center
+    margin: 0 auto
+
+  &__urls
+    display: flex
+    justify-content: center
+
+    @media screen and (max-width: $screen-xs)
+      flex-direction: column
+
+  &__link,
+  &__policy
+    color: white
+    font-style: italic
+    margin: 10px
+    line-height: 40px
+
+  &__policy
+    color: $main_color
+
+  &__copy
+    color: white
+    margin-top: 20px
+
+    &:before
+      content: ''
+      display: block
+      width: 60px
+      height: 2px
+      margin: 0 auto 20px
+      background: white
